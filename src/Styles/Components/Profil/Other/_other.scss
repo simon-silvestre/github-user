@@ -1,0 +1,33 @@
+.other {
+    width: 100%;
+    display: flex;
+    color: $white;
+    padding: 0 80px 0 0;
+    margin-top: 45px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    
+        &:last-child {
+            margin-left: 105px;
+        }
+        
+        div {
+            display: flex;
+            margin: 10px 0;
+            
+            img {
+                width: 22px;
+                height: 22px;
+            }
+            p, a {
+                margin-left: 18px;
+                font-size: 18px;
+                color: $white;
+                text-decoration: none;
+            }
+        }
+    }
+}

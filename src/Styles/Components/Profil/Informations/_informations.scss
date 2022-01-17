@@ -1,0 +1,35 @@
+.informations {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    color: $white;
+    width: 100%;
+    margin-top: 10px;
+
+        .profilInfos {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .name {
+                letter-spacing: 2px;
+                font-size: 28px;
+                color: #fff;
+                text-transform: capitalize;
+                margin-bottom: 10px;
+            }
+            .pseudo {
+                color: $blue;
+                margin-bottom: 30px;
+            }
+            .date {
+                text-transform: capitalize;
+                word-spacing: 3px;
+            }
+        }
+    .profilBio {
+        color: #b1b0b0;
+        align-self: flex-start;
+    }
+}

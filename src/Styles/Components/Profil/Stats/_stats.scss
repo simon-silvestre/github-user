@@ -1,0 +1,22 @@
+.stats {
+    width: 100%;
+    padding: 20px 90px 20px 35px;
+    background: $darkblue;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+
+    .statsTitle {
+        color: $white;
+        margin-bottom: 5px;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+    }
+    .statsContent {
+        color: #fff;
+        font-size: 22px;
+        font-weight: 700;
+    }
+}

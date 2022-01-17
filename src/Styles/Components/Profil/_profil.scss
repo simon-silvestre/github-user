@@ -1,7 +1,23 @@
 .profil {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     padding: 50px;
     background: $lightblue;
     border-radius: 15px;
     margin-top: 25px;
+
+    .profilImg {
+        height: 100%;
+
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+    }
+    .right {
+        width: 73%;
+    }
 }
