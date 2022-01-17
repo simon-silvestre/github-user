@@ -24,3 +24,23 @@
         }
     }
 }
+
+@media screen and (max-width: 500px) {
+    .header {
+        padding: 10px 10px 10px 20px;
+
+        h1 {
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 10px;
+
+            img {
+                width: 20px;
+                height: 20px;
+                margin-left: 12px;
+            }
+        }
+    }
+}

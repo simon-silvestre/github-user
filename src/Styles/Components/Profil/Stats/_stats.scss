@@ -21,3 +21,21 @@
         letter-spacing: 1px;
     }
 }
+
+@media screen and (max-width:500px) { 
+    .stats {
+        padding: 20px;
+        margin-top: 20px;
+
+        div {
+            text-align: center;
+
+            .statsTitle {
+                font-size: 12px;
+            }
+            .statsContent {
+                font-size: 18px;
+            }
+        }
+    }
+}

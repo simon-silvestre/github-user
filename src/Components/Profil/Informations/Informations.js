@@ -1,8 +1,12 @@
 import React from 'react'
+import profil from '../../../Assets/background.jpg'
 
 function Informations() {
     return (
         <div className="informations">
+            <div className="informationImg">
+                <img src={profil} alt="profil" />
+            </div>
                 <div className="profilInfos">
                     <div>
                         <p className="name">the octocat</p>

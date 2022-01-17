@@ -7,6 +7,13 @@
     width: 100%;
     margin-top: 10px;
 
+        .informationImg img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: none;
+        }
         .profilInfos {
             width: 100%;
             display: flex;
@@ -31,5 +38,59 @@
     .profilBio {
         color: #b1b0b0;
         align-self: flex-start;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .informations  {
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        .informationImg img {
+            display: block;
+            width: 115px;
+            height: 115px;
+        }
+
+        .profilInfos {
+            flex-direction: column;
+            width: 65%;
+
+            .name {
+                font-size: 24px;
+            }
+            .pseudo {
+                margin-bottom: 10px;
+                font-size: 14px;
+            }
+            .date {
+                font-size: 16px;
+            }
+        }
+    }
+    .profilBio {
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .informations {
+        justify-content: unset;
+
+        .informationImg img {
+            width: 85px;
+            height: 85px;
+        }
+        .profilInfos {
+            width: 50%;
+            margin-left: 20px;
+
+            .name {
+                font-size: 18px;
+            }
+            .pseudo, .date {
+                font-size: 12px;
+            }
+        }
     }
 }

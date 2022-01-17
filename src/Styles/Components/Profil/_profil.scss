@@ -21,3 +21,24 @@
         width: 73%;
     }
 }
+
+@media screen and (max-width: 850px) {
+    .profil {
+        display: block;
+        padding: 30px;
+
+        .profilImg {
+            display: none;
+        }
+        .right {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .profil {
+        padding: 25px;
+        margin-top: 15px;
+    }
+}
