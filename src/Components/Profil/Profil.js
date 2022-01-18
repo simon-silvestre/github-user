@@ -1,19 +1,19 @@
 import React from 'react'
 import Informations from './Informations/Informations'
 import Stats from './Stats/Stats'
-import profil from '../../Assets/background.jpg'
 import Other from './Other/Other'
 
-function Profil() {
+
+function Profil({profil}) {
     return (
         <div className="profil">
              <div className="profilImg">
-                <img src={profil} alt="profil" />
+                <img src={profil.avatar_url} alt="profil" />
             </div>
             <div className="right">
-                <Informations />
-                <Stats />
-                <Other />
+                <Informations profil={profil} />
+                <Stats profil={profil} />
+                <Other profil={profil} />
             </div>
         </div>
     )

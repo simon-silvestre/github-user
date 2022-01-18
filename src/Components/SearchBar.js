@@ -1,12 +1,13 @@
 import React from 'react'
 import search from '../Assets/search.png'
 
-function SearchBar() {
+
+function SearchBar({searchProfil, setInput, input}) {
     return (
         <div className="searchBar">
             <img src={search} alt="" />
-            <input type="text" placeholder='Search GitHub username...'/>
-            <button>Search</button>
+            <input type="text" value={input} onChange={((e) => setInput(e.target.value))} onKeyPress={(e) => e.key === 'Enter' ? searchProfil() : ''} placeholder='Search GitHub username...'/>
+            <button onClick={searchProfil}>Search</button>
         </div>
     )
 }

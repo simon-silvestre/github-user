@@ -1,20 +1,19 @@
 import React from 'react'
-import profil from '../../../Assets/background.jpg'
 
-function Informations() {
+function Informations({profil}) {
     return (
         <div className="informations">
             <div className="informationImg">
-                <img src={profil} alt="profil" />
+                <img src={profil.avatar_url} alt="profil" />
             </div>
                 <div className="profilInfos">
                     <div>
-                        <p className="name">the octocat</p>
-                        <p className="pseudo">@octocat</p>
+                        <p className="name">{profil.name}</p>
+                        <p className="pseudo">@{profil.login}</p>
                     </div>
-                    <p className="date">joined 25 jan 2011</p>
+                    <p className="date">joined {profil.created_at}</p>
                 </div>
-                <p className="profilBio">this profile has no bio</p>
+                <p className="profilBio">{profil.bio === null ? 'this profile has no bio' : profil.bio}</p>
         </div>
     )
 }
